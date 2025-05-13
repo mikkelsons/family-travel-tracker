@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chuck Norris Jokes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  </head>
+
+  <body>
+    <h1>Chuck Norris...</h1>
+    <div class="card">
+      <% if (locals.joke) { %>
+      <p><%= joke %></p>
+      <% } %>
+    </div>
+    <p class = "user">Choose a category of joke:</p>
+    <form action="/joke" id="form" class="form" method="GET">
+        <select name="type" class="form-select">
+          <option value="animal">Animal</option>
+          <option value="career">Career</option>
+          <option value="celebrity">Celebrity</option>
+          <option value="dev">Dev</option>
+          <option value="fashion">Fashion</option>
+          <option value="food">Food</option>
+          <option value="history">History</option>
+          <option value="money">Money</option>
+          <option value="movie">Movie</option>
+          <option value="music">Music</option>
+          <option value="political">Political</option>
+          <option value="religion">Religion</option>
+          <option value="science">Science</option>
+          <option value="sport">Sport</option>
+          <option value="travel">Travel</option>
+        </select>
+        <button type="submit" class="form-submit">Go</button>
+    </form>
+  </body>
+</html>
