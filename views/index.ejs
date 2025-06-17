@@ -15,29 +15,29 @@
     <h1>Chuck Norris...</h1>
     <div class="card">
       <% if (locals.joke) { %>
-      <p><%= joke %></p>
+      <div class="joke-background"><p><%= joke %></p></div>
       <% } %>
     </div>
-    <p class = "user">Choose a category of joke:</p>
+    <p class="user">Choose a category of joke:</p>
     <form action="/joke" id="form" class="form" method="GET">
-        <select name="type" class="form-select">
-          <option value="animal">Animal</option>
-          <option value="career">Career</option>
-          <option value="celebrity">Celebrity</option>
-          <option value="dev">Dev</option>
-          <option value="fashion">Fashion</option>
-          <option value="food">Food</option>
-          <option value="history">History</option>
-          <option value="money">Money</option>
-          <option value="movie">Movie</option>
-          <option value="music">Music</option>
-          <option value="political">Political</option>
-          <option value="religion">Religion</option>
-          <option value="science">Science</option>
-          <option value="sport">Sport</option>
-          <option value="travel">Travel</option>
-        </select>
-        <button type="submit" class="form-submit">Go</button>
+      <select name="type" class="form-select">
+        <option value="animal">Animal</option>
+        <option value="career">Career</option>
+        <option value="celebrity">Celebrity</option>
+        <option value="dev">Dev</option>
+        <option value="fashion">Fashion</option>
+        <option value="food">Food</option>
+        <option value="history">History</option>
+        <option value="money">Money</option>
+        <option value="movie">Movie</option>
+        <option value="music">Music</option>
+        <option value="political">Political</option>
+        <option value="religion">Religion</option>
+        <option value="science">Science</option>
+        <option value="sport">Sport</option>
+        <option value="travel">Travel</option>
+      </select>
+      <button type="submit" class="form-submit">Go</button>
     </form>
   </body>
 </html>
